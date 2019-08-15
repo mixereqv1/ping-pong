@@ -17,7 +17,6 @@ export function updateEnemy(dt) {
     }
 
     game_state.enemy_y = clamp(game_state.enemy_y, 0, game.game_height - game.enemy_height);
-
     setPos($enemyDOM, game_state.enemy_x, game_state.enemy_y);
 }
 
