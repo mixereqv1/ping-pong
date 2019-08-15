@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .header {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+}
+
+.container .result {
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  top: 150px;
+}
+
+.container .game {
+  width: 640px;
+  height: 480px;
+  border: 5px solid #fff;
+  position: relative;
+}
+
+.container .game .player, .container .game .enemy {
+  width: 20px;
+  height: 60px;
+  background: #fff;
+}
+
+.container .game .ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+}
