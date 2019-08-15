@@ -21,18 +21,18 @@ export function update() {
         if(game_state.ball_x <= 0) {
             game.score_right += 1;
             document.querySelector('.result').innerText = game.score_left + ':' + game.score_right;
+            cancelAnimationFrame(animation);
             restartPlayer();
             restartEnemy();
             restartBall();   
-            cancelAnimationFrame(animation);
             game_state.paused = true;
         } else if(game_state.ball_x + game.ball_width >= game.game_width) {
             game.score_left += 1;
             document.querySelector('.result').innerText = game.score_left + ':' + game.score_right;
+            cancelAnimationFrame(animation);
             restartPlayer();
             restartEnemy();
             restartBall();
-            cancelAnimationFrame(animation);
             game_state.paused = true;
         }
     // } else {
