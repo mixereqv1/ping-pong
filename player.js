@@ -17,7 +17,6 @@ export function updatePlayer(dt) {
     }
 
     game_state.player_y = clamp(game_state.player_y, 0, game.game_height - game.player_height);
-
     setPos($playerDOM, game_state.player_x, game_state.player_y);
 }
 

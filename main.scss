@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Roboto', sans-serif;
     .header {
         color: #fff;
         font-size: 3em;
@@ -18,26 +18,51 @@
         position: absolute;
         top: 30px;
     }
-
     .result {
         color: #fff;
         font-size: 2em;
         position: absolute;
         top: 150px;
     }
-
     .game {
         width: 640px;
         height: 480px;
         border: 5px solid #fff;
         position: relative;
-
-        .player, .enemy {
+        color: #fff;
+        .instructions__title {
+            margin: 5px 0;
+            text-align: center;
+        }
+        .instructions__item {
+            margin: 5px 0 5px 15px;
+            font-size: 1.1em;
+        }
+        .glhf {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .start__btn {
+            width: 100px;
+            font-size: 1.3em;
+            margin: 15px auto;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #fff;
+            padding: 10px;
+        }
+        .start__btn:hover {
+            background: #2b2b2b;
+            transition: background-color .3s ease;
+            cursor: pointer;
+        }
+        .player,
+        .enemy {
             width: 20px;
             height: 60px;
             background: #fff;
         }
-
         .ball {
             width: 15px;
             height: 15px;
@@ -46,5 +71,25 @@
             position: absolute;
             left: 0;
         }
+        .restart__btn {
+            width: 30%;
+            text-align: center;
+            background: #2b2b2b;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .restart__btn:hover {
+            background: #3a3a3a;
+            transition: background-color .3s ease;
+        }
+    }
+    .after__game {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: bold;
     }
 }

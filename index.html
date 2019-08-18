@@ -6,15 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="main.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
         <title>Ping pong - js</title>
     </head>
 
     <body>
-        <div class="container">
+        <main class="container">
             <header class="header">Ping pong</header>
             <section class="result">0:0</section>
-            <div id="game" class="game"></div>
-        </div>
+            <div id="game" class="game">
+                <h1 class="instructions__title">Instructions</h1>
+                <div class="instructions__item">1. 'W' and 'S' control left player</div>
+                <div class="instructions__item">2. 'Up Arrow' and 'Down Arrow' control left player</div>
+                <div class="instructions__item">3. After reaching a point you got 1 second delay.</div>
+                <div class="instructions__item">4. Player who will first reach 10 points will win!</div>
+                <div class="glhf">Good Luck and Have Fun!</div>
+                <div class="start__btn">Start</div>
+            </div>
+        </main>
 
         <script src="main.js" type="module"></script>
     </body>
